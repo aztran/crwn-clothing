@@ -5,6 +5,17 @@ import "./Collection.scss";
 import CollectionItemComponent from "../../components/collection-item/collection-item.component";
 
 const CollectionPage = ({ match, collection }) => {
+  // useEffect(() => {
+  //   console.log("I am subscribing");
+  //   const unsubscribeFromCollections = firestore
+  //     .collection("collections")
+  //     .onSnapshot(async snapshot => console.log(snapshot));
+  //   return () => {
+  //     console.log("i am unsubscribing");
+  //     unsubscribeFromCollections();
+  //   };
+  // }, []);
+
   const { title, items } = collection;
   console.log(collection);
   return (
